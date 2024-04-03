@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160vh;
+    background-image: linear-gradient(45deg, rgb(42, 27, 53) 0%, rgb(42, 27, 53) 26%, rgb(82, 55, 64) 26%, rgb(82, 55, 64) 27%, rgb(121, 83, 76) 27%, rgb(121, 83, 76) 29%, rgb(161, 111, 87) 29%, rgb(161, 111, 87) 30%, rgb(200, 139, 99) 30%, rgb(200, 139, 99) 100%);
+}
+
+main{
+    width: 400px;
+   
+    display: flex;
+    flex-direction: column;
+   
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 12px rgba(6, 31, 42, 0.382);
+    font-family: "Shippori Mincho", serif;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+}
+.item{
+    display: grid;
+        grid-template-columns: 30px;
+        grid-template-rows: 30px 30px 30px 30px 30px 30px 30px;
+        gap: 0.2rem;
+
+}
+.item2{
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px 30px 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px;
+    gap: 0.2rem;
+}
+section:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem 0rem;
+}
+section:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+background-image: linear-gradient(45deg, rgb(236, 204, 140) 0%, rgb(236, 204, 140) 11%, rgb(212, 161, 111) 11%, rgb(212, 161, 111) 24%, rgb(188, 117, 83) 24%, rgb(188, 117, 83) 29%, rgb(164, 74, 54) 29%, rgb(164, 74, 54) 33%, rgb(140, 30, 25) 33%, rgb(140, 30, 25) 100%);
+}
+.ticket_confirm{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+.ticket_confirm div:first-child{
+    padding: 0.4rem 1.7rem;
+    background-color: rgb(202, 18, 18);
+    color: white;
+    font-weight: 600;
+}
+.ticket_confirm div:last-child {
+    padding: 0.4rem;
+    color: white;
+    font-weight: 500;
+}
+.next{
+    display: flex;
+    flex-direction:row;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.7rem;
+    background-color: black;
+    color: white;
+    padding:0.3rem ;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 12px rgb(6, 31, 42);
+    transition: 0.7s;
+}
+.next:hover{
+    background-color: white;
+    color: black;
+}
+.confirm{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: rgb(98, 95, 95);
+    font-weight: 500;
+}
+.confirm div{
+    display: flex;
+    flex-direction: column;
+    grid-area: 0.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+    
+}
+main:hover img{
+    transform: scale(1.1);
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: 0.2rem;
+}
+.box {
+    width: 200px;
+    height: 20px;
+    border: solid 2px #797979;
+    border-color: #0000007f transparent transparent transparent;
+    border-radius: 50px/100% 20px 0 0;
+    transform: rotate(180deg);
+}
+section:first-child{
+    position: relative;
+    height: 200px;
+   
+}
+.images{
+
+    z-index: -1;
+    height: 100%;
+    position: relative;
+}
+.movie{
+    top: 0;
+        color: rgb(238, 233, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 5rem;
+    position: absolute;
+    z-index: 100;
+}
+.movie p:first-child{
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 12px rgb(6, 31, 42);
+}
+@media only screen and (max-width:400px){
+    main{
+        width: 320px;
+    }
+    section:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+          .items {
+              display: flex;
+              flex-direction: row;
+              gap: 0.5rem;
+          }
+}
